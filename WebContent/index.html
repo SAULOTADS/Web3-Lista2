@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Notepad</title>
+
+</head>
+<body>
+	
+	<h3>Bem vindo!</h3>
+	
+	<input placeholder="Digite a url" id="urlId" />
+	<button id="btnConnect">Conectar</button>
+	<button id="btnCreateRoom">Criar Sala</button>
+	<div>
+		<p id="infoSala"></p>
+	</div>
+	<hr/>
+	<p>Área de texto</p>
+	<textarea id="content" rows="10" cols="100" onkeyup="salvarTexto()"></textarea><br><br>
+	<button id="btnSalvar" onclick="salvarTexto(); alert('Texto Salvo com sucesso!')">Salvar</button>
+	<button onclick="document.getElementById('content').value='';">Limpar Tudo</button>
+	<br><br>
+	
+	<hr/>
+	<p>Área de imagens</p>
+	<br>
+	<input type="file" id="arq" />
+	<br>
+	<div id="imgs"></div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
